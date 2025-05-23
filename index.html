@@ -3,12 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Business-page</title>
-
+    <title>Business_Page</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        html {
+            scroll-behavior: smooth;
+        }
+        .animate-float {
+            aniamation: float 3s ease-in-out infinite
+        }
+    </script>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+<body bg-white text-gray-900 font-sans>
+    <!-- navbar -->
+     <header class="fixed z-50 w-full top-0 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto flex px-6 py-6 items-center justify-between">
+            <h1 class="text-3xl font-extrabold text-blue-600">🥶Dimeji🥶</h1>
+            <ul class="hidden  md:flex space-x-10 font-medium">
+                <li><a href="#home" class=" hover:text-blue-800">Home</a></li>
+                <li><a href="#features" class=" hover:text-blue-800">Features</a></li>
+                <li><a href="#join" class=" hover:text-blue-800">Join</a></li>
+                <li><a href="#contact" class=" hover:text-blue-800">Contact</a></li>
+
+            </ul>
+
+            <!-- btn  -->
+             <button type="button" id="menu-btn" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+             </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 py-7 text-lg text-center font-semibold list-none">
+            <li><a href="#"  class="block hover:text-blue-800 py-2">Home</a></li>
+            <li><a href="#" class="block hover:text-blue-800 py-2">Features</a></li>
+            <li><a href="#" class="block hover:text-blue-800 py-2">Join</a></li>
+            <li><a href="#" class="block hover:text-blue-800 py-2">Contact</a></li>
+        </div>
+     </header>
+    
+     <!-- banner section -->
+      <section id="home" class="text-white pt-28 pb-20 bg-gradient-to-r from-sky-700 via-sky-500 to-sky-400">
+        <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+            <div class="md:w-1/2">
+            <h2 class="text-4xl md:text-6xl font-bold leading-normal mb-6 ">We create <span class="text-yellow-400 ">unique and attractive brand</span> presence for brands</h2>
+            <p class="text-lg text-yellow-300 font-bold mb-7">Crafted for creators, beginners & professionals. Get to Dimeji and build your dream brand with excellence.</p>
+            <a href="#Join" class="bg-white px-7 py-3 shadow-lg rounded-lg inline-block text-sky-400 hover:bg-blue-600 hover:text-white">Get Started</a>
+        </div>
+
+        <!-- img -->
+         <div>
+            <img src="/business_page/img/shegxzy.jfif" class="w-72 h-72 md:h-84 object-cover rounded-full shadow-lg animate-f" alt=""> 
+         </div>
+        </div>
+      </section>
+
+      <!-- Features section -->
+       <section id="features" class="bg-gray-50 pt-10 py-20">
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="text-5xl font-bold text-sky-600 mb-10">Why we're a Guru in Tech</h3>
+            <div class="grid md:grid-cols-3 gap-10 items-center">
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+                    <h4 class="font-medium text-2xl text-yellow-500 py-5">🚅 Ultra Speed 🚅</h4>
+                    <p class="text-xl">With seven years of experience, we create ultra fast and smooth website</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+                    <h4 class="font-medium text-2xl text-yellow-500 py-5">😍 Enhanced and Beautiful Experience 😍</h4>
+                    <p class="text-xl">Delivered output includes platforms and websites with unique user experience</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition duration-300">
+                    <h4 class="font-medium text-2xl text-yellow-500 py-5">⌛ Website Hosting ⌛</h4>
+                    <p class="text-xl">We give your website hosting and its unique presence. Free SEO work for your brand.
+                    </p>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!--work
     
 </body>
 </html>
